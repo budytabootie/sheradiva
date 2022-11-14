@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sheradiv/public_html/testss
+    - /bin/cp/ index.html $DEPLOYPATH
