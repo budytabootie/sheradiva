@@ -75,7 +75,7 @@ aside {
 
 			&:hover {
 				.material-icons {
-					color: var(--primary);
+					color: var(--dark-alt);
 					transform: translateX(0.4rem);
 				}
 			}
