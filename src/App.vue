@@ -34,6 +34,23 @@ body {
 	background: var(--light);
 }
 
+body::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: transparent;
+}
+
 button {
 	cursor: pointer;
 	appearance: none;

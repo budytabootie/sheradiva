@@ -90,7 +90,6 @@
 				beArray.split(",").forEach(item => {
 					document.getElementById(item + `1`).classList.remove(item)
 					document.getElementById(item + `1`).classList.remove('active')
-					console.log(props);
 				})
 
 				let currTar = event.currentTarget.getAttribute('href').split("#")[1]
@@ -184,13 +183,11 @@
 		menuItems = Array(props.link);
 		beArray.split(",").forEach(item => {
 			document.getElementById(item + `1`).classList.remove(item)
-			console.log(props);
 		})
 		menuItems.forEach(item => {
 
-			const topHref = Number(document.getElementById(item).offsetTop) - 500;
+			const topHref = Number(document.getElementById(item).offsetTop) - 80;
 			const botHref = topHref + Number(document.getElementById('theSection').offsetHeight);
-			// console.log(window.pageYOffset);
 			const currentPos = window.pageYOffset
 
 			if (currentPos > topHref && currentPos < botHref ) {
@@ -261,15 +258,15 @@
 
 		flex-direction: row;
 		justify-content: space-between;
-		padding: 0px 10px;
+		padding: 0rem 1rem;
 
 		.button {
 			display: flex;
 			align-items: center;
 			text-decoration: none;
-
-			padding: 1rem 2rem;
 			transition: 0.1s ease-out;
+			padding: 0.3rem 0.5rem 0.3rem 1.3rem;
+			margin: 1rem 0rem;
 
 			.collapsible {
 				width: 100%;
@@ -280,14 +277,13 @@
 
 				div {
 					i {
-						padding: 0rem 0rem;
+						padding: 0rem 1rem;
 						transition: all 0.3s ease;
 
 						&.expand {
 
 
 							&.opened {
-								padding: 0rem 0rem;
 								transform: rotate(180deg);
 							}
 
@@ -321,7 +317,7 @@
 			&.Maintenance-Support,
 			&:hover,
 			&.active {
-				background-color: var(--light-blue);
+				background: #C2C1FB;
 				border-radius: 20px;
 
 				&.hide {

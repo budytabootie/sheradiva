@@ -1,7 +1,6 @@
 <template>
 	<main>
 		<article>
-			<h1>This is an articles</h1>
 			<section v-for="(header, index) in headers" :key="index" id="theSection">
 				<component :is="header.component" :head="header.head" :link="header.link" :data="headers"></component>
 			</section>
