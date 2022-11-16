@@ -33,6 +33,16 @@ const ToggleMenu = () => {
 </script>
 
 <style lang="scss">
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
 aside {
 	position: fixed;
 	display: flex;
@@ -50,6 +60,7 @@ aside {
 
 	.logo {
 		margin-bottom: 1rem;
+		animation: fadeIn 3s;
 
 		img {
 			width: 2rem;
@@ -76,7 +87,7 @@ aside {
 
 			&:hover {
 				.material-icons {
-					color: var(--primary);
+					color: var(--dark-alt);
 					transform: translateX(0.4rem);
 				}
 			}
@@ -137,6 +148,13 @@ aside {
 		position: fixed;
 		z-index: 99;
 
+		.logo {
+			align-self: center;
+			transition: 0.2s ease-out;
+			-webkit-animation: fadeEffect 1s;
+			animation: fadeEffect 0.1s;
+
+		}
 
 		.menu-toggle-wrap {
 			top: -3rem;
