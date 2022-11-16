@@ -16,8 +16,8 @@
 		</a>
 	</div>
 
-	<div v-show="showChildren" class="items-container" :class="{ cExpanded: is_expanded }"
-		:style="{ height: containerHeight }" ref="container">
+	<div v-show="showChildren || !is_expanded" class="items-container" :class="{ cExpanded: is_expanded }"
+		:style="{ height: containerHeight || !containerHeight && !is_expanded}" ref="container">
 		<menu-item v-for="(item, index) in data" :key="index" :data="item.children" :label="item.label"
 			:icon="item.icon" :depth="depth + 1" :link="item.link" />
 	</div>

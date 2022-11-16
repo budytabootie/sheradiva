@@ -59,16 +59,6 @@ html {
   scroll-behavior: smooth;
 }
 
-article {
-	width: 100%;
-	margin-bottom: 500px;
-	justify-content: center;
-
-	section {
-		padding: 0px 0px;
-	}
-}
-
 aside {
 	width: 25%;
 

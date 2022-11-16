@@ -64,7 +64,8 @@ button {
 
 	main {
 		flex: 1 1 0;
-		padding: 2rem 3rem;
+		padding: 1rem 0 1rem 1.5rem;
+		display: block;
 	}
 }
 
