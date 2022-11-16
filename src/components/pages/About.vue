@@ -123,13 +123,31 @@ onMounted(() =>{
 
 		let deltaY = document.querySelector('.button')
 		let classTag = document.querySelector('#' + props.link + ' h1')
-		showTheSection(e,topOfSection,item,classTag,deltaY)
+		showTheSection(e,classTag,deltaY)
 		classTag = document.querySelector('#' + props.link + ' hr')
-		showTheSection(e,topOfSection,item,classTag,deltaY)
+		showTheSection(e,classTag,deltaY)
 		classTag = document.querySelector('.columnAbout1')
-		showTheSection(e,topOfSection,item,classTag,deltaY)
+		showTheSection(e,classTag,deltaY)
 		classTag = document.querySelector('.columnAbout2')
-		showTheSection(e,topOfSection,item,classTag,deltaY)
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.child-head')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.list1')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.list2')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.list3')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.columnAbout4')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.columnAbout5')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.columnAbout6')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.columnAbout7')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.columnAbout8')
+		showTheSection(e,classTag,deltaY)
 
 		})
 	})
@@ -522,20 +540,35 @@ main {
 			&.head {
 				h1 {
 					margin: 0 !important;
+					font-size: 12px;
+					text-align: left;
 				}
 
 				hr {
 
-					margin-left: 24.5px !important;
+					margin-left: 0 !important;
+
+					&.about {
+						width: 68px;
+					}
 				}
 			}
 			&.body {
 				display: block;
+				font-size: 7px;
+				width: 60vw;
 
 				.columnAbout1 {
 					width: 100% !important;
 					margin-left: 0;
 					padding: -25px;
+
+					p {
+
+						svg {
+							width: 12px;
+						}
+					}
 
 				}
 				.columnAbout2 {
@@ -544,35 +577,82 @@ main {
 					padding-left: 0 !important;
 					padding-top: 26px;
 
-					p{
-						padding-bottom: 73px;
+					p {
+						padding-bottom: 30px;
+					}
+
+					.btn-0 {
+						width: 105px;
+						padding: 5px 13px !important;
+
+						a {
+							font-size: 7.5px !important;
+						}
 					}
 				}
 			}
 
 			&.body1 {
+				width: 60vw;
 				
 				.wrap1 {
 					padding-top: 151px;
-					flex-direction: column;
+					flex-direction: column-reverse;
 					align-items: center;
 					padding-left: 0;
 					padding: 20px;
-					transform: rotate(180deg);
 
 					.columnAbout3 {
-						transform: rotate(180deg);
-						padding-top: 20px;
+						padding-top: 10px;
+
+						.child-head {
+							font-size: 10px;
+						}
+
+						.child-list {
+							font-size: 8px;
+							
+							.list {
+								align-items: center;
+								height: 0.5vh;
+								margin-top: 7px !important;
+								padding: 15px 11px !important;
+
+								&.list1 {
+									margin-top: 33px !important;
+								}
+
+								span {
+									padding-right: 11px !important;
+								}
+
+								p {
+									padding-right: 10px !important;
+								}
+
+								i {
+									font-size: 12px !important;
+									margin-right: 11px !important;
+								}
+							}
+						}
 					}
 					
 					.columnAbout4 {
+						margin: 0;
 						
 						svg {
-							transform: rotate(180deg);
 							position: relative;
+							display: block;
+							margin-left: auto;
+							margin-right: auto;
 							margin-top: 20px;
-							max-width: 480px !important;
-							height: 267px !important;
+							width: 45vw !important;
+							height: 247px !important;
+						}
+
+						&.show {
+							transform: translateX(0);
 						}
 					}
 
@@ -580,11 +660,90 @@ main {
 				.wrap2 {
 					flex-direction: column;
 					align-items: center;
-					padding-top: 20px;
+					padding-top: 10px;
+
+					.columnWrap2 {
+						width: 118px;
+						background-color: white;
+						margin-top: 8px;
+						margin-bottom: 8px;
+						border-radius: 4px;
+						transition: all 2s ease-out;
+
+						svg {
+							display: block;
+							margin-left: auto;
+							margin-right: auto;
+							margin-top: 10px;
+							width: 26px;
+							height: 28px;
+						}
+
+						h4 {
+							text-align: center;
+							font-weight: 500;
+							font-size: 10px;
+							margin: 0;
+						}
+						
+						p {
+							bottom: 0;
+							text-align: center;
+							font-weight: 400;
+							font-size: 7px;
+							margin-top: 7px;
+						}
+
+						&.columnAbout5 {
+							&.hide {
+								transform: translateX(100px);
+								opacity: 0;
+							}
+							&.show {
+								transform: translateX(0px);
+								opacity: 1;
+							}
+						}
+						&.columnAbout6 {
+							&.hide {
+								transform: translateX(150px);
+								opacity: 0;
+							}
+							&.show {
+								transform: translateX(0px);
+								opacity: 1;
+							}
+						}
+						&.columnAbout7 {
+							&.hide {
+								transform: translateX(200px);
+								opacity: 0;
+							}
+							&.show {
+								transform: translateX(0px);
+								opacity: 1;
+							}
+						}
+						&.columnAbout8 {
+							&.hide {
+								transform: translateX(250px);
+								opacity: 0;
+							}
+							&.show {
+								transform: translateX(0px);
+								opacity: 1;
+							}
+						}
+					}
 				}
 			}
 		}
 			
+	}
+}
+@media screen and (max-width: 768px) {
+	main {
+		width: 100%;
 	}
 }
 </style>
@@ -605,16 +764,25 @@ function showTheSection (e,mainTag,deltaY) {
 			
 
 		}
-		console.log(currTar);
 
 		if (e.pointerId != undefined) {
-			const recognizeIdButton = userWindow.getAttribute('id')
+			const recognizeIdButton = mainTag.getAttribute('id')
 			const recognizeIdPage = deltaY.getAttribute('id')
-			if (recognizeIdPage == recognizeIdButton) {
+			const checkClass = mainTag.getAttribute('class').match(/\soneClick/g)
+			if (recognizeIdPage == "About1") {
 				mainTag.classList.remove('show')
-				mainTag.classList.add('show')
+				
+				if (checkClass != null) {
+					setTimeout(() => {
+						mainTag.classList.add('show')
+					},2000)
+				} else {
+					mainTag.classList.add('show')
+					mainTag.classList.add('oneClick')
+				}
 			} else {
 				mainTag.classList.remove('show')
+				mainTag.classList.remove('oneClick')
 			}
 		}
 	}

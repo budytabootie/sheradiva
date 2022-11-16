@@ -51,6 +51,7 @@ aside {
 	min-height: 100vh;
 	overflow: hidden;
 	padding: 1rem;
+	z-index: 99;
 
 	background-color: var(--light-alt);
 	color: var(--light);
@@ -182,7 +183,5 @@ aside {
 			}
 		}
 	}
-
-	@media (max-width: 768px) {}
 }
 </style>
