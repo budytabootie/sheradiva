@@ -75,7 +75,7 @@ aside {
 
 			&:hover {
 				.material-icons {
-					color: var(--primary);
+					color: var(--dark-alt);
 					transform: translateX(0.4rem);
 				}
 			}
@@ -136,7 +136,10 @@ aside {
 		position: fixed;
 		z-index: 99;
 
-
+		.logo {
+			align-self: center;
+			transition: 0.2s ease-in-out;
+		}
 		.menu-toggle-wrap {
 			top: -3rem;
 
