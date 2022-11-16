@@ -150,7 +150,7 @@ aside {
 		.logo {
 			align-self: center;
 			transition: 0.2s ease-out;
-			-webkit-animation: fadeOut 1s;
+			-webkit-animation: fadeEffect 1s;
 			animation: fadeEffect 0.1s;
 
 		}
