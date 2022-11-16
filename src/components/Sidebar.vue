@@ -59,7 +59,7 @@ aside {
 
 	.logo {
 		margin-bottom: 1rem;
-		animation: fadeIn 4s;
+		animation: fadeIn 3s;
 
 		img {
 			width: 2rem;
