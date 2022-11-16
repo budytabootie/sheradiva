@@ -138,8 +138,9 @@ aside {
 
 		.logo {
 			align-self: center;
-			transition: 0.2s ease-in-out;
+			transition: 0.2s ease-out;
 		}
+
 		.menu-toggle-wrap {
 			top: -3rem;
 
