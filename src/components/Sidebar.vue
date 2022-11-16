@@ -37,6 +37,10 @@ const ToggleMenu = () => {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
 
 aside {
 	position: fixed;
@@ -54,7 +58,7 @@ aside {
 
 	.logo {
 		margin-bottom: 1rem;
-		animation: fadeIn 5s;
+		animation: fadeIn 4s;
 
 		img {
 			width: 2rem;
@@ -145,8 +149,8 @@ aside {
 		.logo {
 			align-self: center;
 			transition: 0.2s ease-out;
-			-webkit-animation: fadeEffect 1s;
-			animation: fadeEffect 0.1s;
+			-webkit-animation: fadeOut 1s;
+			animation: fadeOut;
 
 		}
 
