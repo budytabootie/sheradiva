@@ -34,12 +34,13 @@ const ToggleMenu = () => {
 
 <style lang="scss">
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-@keyframes fadeOut {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 aside {
@@ -150,7 +151,7 @@ aside {
 			align-self: center;
 			transition: 0.2s ease-out;
 			-webkit-animation: fadeOut 1s;
-			animation: fadeOut;
+			animation: fadeEffect 0.1s;
 
 		}
 
