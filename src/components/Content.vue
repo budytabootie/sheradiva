@@ -20,16 +20,16 @@ import Telegram_Bot from './pages/Telegram_Bot.vue'
 import Maintenance_Support from './pages/Maintenance_Support.vue'
 
 const headers = [
-	{ "head" : "Web Portals", "link" : "Web-Portals", "component" : Web_Portals},
-	{ "head" : "Mobile Applications", "link" : "Mobile-Applications", "component" : Mobile_Applications},
+	// { "head" : "Web Portals", "link" : "Web-Portals", "component" : Web_Portals},
+	// { "head" : "Mobile Applications", "link" : "Mobile-Applications", "component" : Mobile_Applications},
 	{ "head" : "About", "link" : "About", "component" : About},
 	{ "head" : "Product", "link" : "Product", "component" : Product},
-	{ "head" : "Web Development", "link" : "Web-Development", "component" : Web_Development},
-	{ "head" : "Web Applications", "link" : "Web-Applications", "component" : Web_Applications},
-	{ "head" : "Web Portals", "link" : "Web-Portals", "component" : Web_Portals},
-	{ "head" : "Mobile Applications", "link" : "Mobile-Applications", "component" : Mobile_Applications},
-	{ "head" : "Telegram Bot", "link" : "Telegram-Bot", "component" : Telegram_Bot},
-	{ "head" : "Maintenance Support", "link" : "Maintenance-Support", "component" : Maintenance_Support}
+	// { "head" : "Web Development", "link" : "Web-Development", "component" : Web_Development},
+	// { "head" : "Web Applications", "link" : "Web-Applications", "component" : Web_Applications},
+	// { "head" : "Web Portals", "link" : "Web-Portals", "component" : Web_Portals},
+	// { "head" : "Mobile Applications", "link" : "Mobile-Applications", "component" : Mobile_Applications},
+	// { "head" : "Telegram Bot", "link" : "Telegram-Bot", "component" : Telegram_Bot},
+	// { "head" : "Maintenance Support", "link" : "Maintenance-Support", "component" : Maintenance_Support}
 ]
 
 const currentSection = ref('')
