@@ -27,7 +27,6 @@ import Content from './components/Content.vue';
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Fira sans', sans-serif;
 }
 
 body {
@@ -64,29 +63,19 @@ button {
 
 	main {
 		flex: 1 1 0;
-		padding: 1rem 0 1rem 1.5rem;
+		padding: 0rem 0 1rem 1.5rem;
 		display: block;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	.app {
-		display: flex;
-
-		main {
-			flex: 1 1 0;
-			padding: 2rem 2.3rem;
-		}
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.app {
 		display: flex;
+		overflow-x: hidden;
 
 		main {
 			flex: 1 1 0;
-			padding: 2rem 1.6rem;
+			padding: 0 0 0 1.5rem;
 		}
 	}
 }

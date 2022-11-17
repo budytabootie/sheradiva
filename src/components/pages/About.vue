@@ -1,7 +1,7 @@
 <template>
-	<main :class="`${head}-page`" :id="link">
+	<main :class="`${link}-page`" :id="link">
 		<div class="head">
-			<h1 class="hide">TENTANG KAMI</h1>
+			<h1 class="hide">{{ head }}</h1>
 			<hr class="about hide">
 		</div>
 		<div class="body">
@@ -260,7 +260,6 @@ main {
 			height: 35px;
 			display: block;
   			justify-content: center;
-
 			h1 {
 				color: #37517E;
 				width: 185px;
@@ -610,8 +609,14 @@ main {
 		@media screen and (max-width: 768px) {
 
 			&.head {
+				
+				
 				h1 {
 					margin: 0 !important;
+					margin-top: 30px !important;
+					margin-left: 10px !important;
+					line-height: 29px;
+					margin-bottom: 0 !important;
 					font-size: 12px;
 					text-align: left;
 
@@ -628,7 +633,7 @@ main {
 
 				hr {
 
-					margin-left: 0 !important;
+					margin-left: 10px !important;
 
 					&.about {
 						width: 68px;
@@ -685,7 +690,7 @@ main {
 						}
 
 						.btn-0 {
-							width: 105px;
+							width: 115px;
 							padding: 5px 13px !important;
 
 							a {

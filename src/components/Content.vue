@@ -10,6 +10,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import Jumbotron from './pages/Jumbotron.vue'
 import About from './pages/About.vue'
 import Product from './pages/Product.vue'
 import Web_Development from './pages/Web_Development.vue'
@@ -21,9 +22,9 @@ import Maintenance_Support from './pages/Maintenance_Support.vue'
 
 const headers = [
 	// { "head" : "Web Portals", "link" : "Web-Portals", "component" : Web_Portals},
-	// { "head" : "Mobile Applications", "link" : "Mobile-Applications", "component" : Mobile_Applications},
-	{ "head" : "About", "link" : "About", "component" : About},
-	{ "head" : "Product", "link" : "Product", "component" : Product},
+	{ "head" : "Jumbotron", "link" : "Jumbotron", "component" : Jumbotron},
+	{ "head" : "Tentang Kami", "link" : "About", "component" : About},
+	// { "head" : "Product", "link" : "Product", "component" : Product},
 	// { "head" : "Web Development", "link" : "Web-Development", "component" : Web_Development},
 	// { "head" : "Web Applications", "link" : "Web-Applications", "component" : Web_Applications},
 	// { "head" : "Web Portals", "link" : "Web-Portals", "component" : Web_Portals},
