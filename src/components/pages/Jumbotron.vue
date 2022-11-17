@@ -91,8 +91,8 @@ main {
 	
 	@media screen and (max-width: 768px) {
 		.container {
-		width: 75vw;
-		height: 100vh;
+		width: 100%;
+		height: 55vh;
 		background-color: #37517E;
 		display: flex;
 		flex-direction: column-reverse;
@@ -102,6 +102,7 @@ main {
 			width: 50%;
 			color: #F5F5F5;
 			text-align: center;
+			margin-top: 30px;
 			
 			.text {
 				h1 {
@@ -126,7 +127,6 @@ main {
 					height: 34px;
 					margin-left: auto;
 					margin-right: auto;
-					margin-bottom: 10px;
 					
 					
 					span {
@@ -135,14 +135,10 @@ main {
 					}
 				}
 			}
-			position: relative;
+
 			svg {
-				width: 40vh;
-				left: calc(50% - 40vh / 2);
-				top: calc(50% - 40vh / 2);
-				position: absolute;
-				margin: auto;
-				justify-items: center;
+				width: 140px;
+				height: 20vh;
 			}
 		}
 	}

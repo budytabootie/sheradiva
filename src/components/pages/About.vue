@@ -680,7 +680,7 @@ main {
 
 					}
 					&.columnAbout2 {
-						width: 100% !important;
+						width: 70% !important;
 						margin-left: 0;
 						padding-left: 0 !important;
 						padding-top: 26px;
@@ -712,7 +712,7 @@ main {
 			}
 
 			&.body1 {
-				width: 75vw;
+				width: 95%;
 				
 				.wrap1 {
 					padding-top: 151px;
@@ -790,7 +790,7 @@ main {
 					.onWrap {
 						display: flex;
 						.columnWrap2 {
-							width: 118px;
+							width: 30vw;
 							background-color: white;
 							margin-top: 8px;
 							margin-bottom: 8px;
