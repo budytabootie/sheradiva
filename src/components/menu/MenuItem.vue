@@ -229,11 +229,11 @@
 		align-items: center;
 		text-decoration: none;
 
-		padding: 0.5rem 1rem;
+		padding: 1rem 1rem;
 		transition: 0.2s ease-out;
 
 		.material-icons {
-			font-size: 1rem;
+			font-size: 2rem;
 			color: var(--grey);
 			transition: 0.2s ease-out;
 		}
