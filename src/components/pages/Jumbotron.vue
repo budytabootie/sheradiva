@@ -91,8 +91,8 @@ main {
 	
 	@media screen and (max-width: 768px) {
 		.container {
-		width: 100%;
-		height: 55vh;
+		width: calc( 100vw - 5rem );
+		height: 50vh;
 		background-color: #37517E;
 		display: flex;
 		flex-direction: column-reverse;
@@ -102,14 +102,13 @@ main {
 			width: 50%;
 			color: #F5F5F5;
 			text-align: center;
-			margin-top: 30px;
 			
 			.text {
 				h1 {
 					font-weight: 700;
 					font-size: 16px;
 				}
-
+				
 				p {
 					margin-top: 10px;
 					font-weight: 500;
@@ -142,6 +141,6 @@ main {
 			}
 		}
 	}
-	}
+}
 }
 </style> 
