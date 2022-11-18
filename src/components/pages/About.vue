@@ -595,8 +595,11 @@ main {
 				h1 {
 					margin: 0 !important;
 <<<<<<< HEAD
+<<<<<<< HEAD
 				}
 =======
+=======
+>>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
 					margin-top: 30px !important;
 					margin-left: 10px !important;
 					line-height: 29px;
@@ -619,8 +622,11 @@ main {
 				hr {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 					margin-left: 24.5px !important;
 =======
+=======
+>>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
 					margin-left: 10px !important;
 
 					&.about {
@@ -697,6 +703,10 @@ main {
 
 			&.body1 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+				width: 95%;
+>>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
 =======
 				width: 95%;
 >>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
