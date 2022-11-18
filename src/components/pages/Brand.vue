@@ -12,7 +12,7 @@
                     <iconBrand3 />
                 </div>
                 <div class="Brand C4">
-                    <iconBrand1 />
+                    <iconBrand4 />
                 </div>
             </div>
         </div>
@@ -43,8 +43,9 @@ main {
     background-color: #F3F5FA;
     
     .overflow {
+        display: block;
         .container {
-            width: 100%;
+            width: 93%;
             height: 104px;
             display: flex;
             justify-content: center;
@@ -59,12 +60,14 @@ main {
                 margin-right: calc(155px / 2);
             }
         }
-
+        
         @media screen and (max-width: 768px) {
             .container {
-                width: 20%;
                 justify-content: flex-start;
+                width: 20%;
                 overflow: scroll;
+                display: flex;
+                justify-items: center;
             }
         }
     }
