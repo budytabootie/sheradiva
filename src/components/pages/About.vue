@@ -153,13 +153,39 @@ onMounted(() =>{
 
 		let deltaY = document.querySelector('.button')
 		let classTag = document.querySelector('#' + props.link + ' h1')
-		showTheSection(e,topOfSection,item,classTag,deltaY)
+		showTheSection(e,classTag,deltaY)
 		classTag = document.querySelector('#' + props.link + ' hr')
-		showTheSection(e,topOfSection,item,classTag,deltaY)
+		showTheSection(e,classTag,deltaY)
 		classTag = document.querySelector('.columnAbout1')
-		showTheSection(e,topOfSection,item,classTag,deltaY)
+		showTheSection(e,classTag,deltaY)
 		classTag = document.querySelector('.columnAbout2')
-		showTheSection(e,topOfSection,item,classTag,deltaY)
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.child-head')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.list1')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.list2')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.list3')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.columnAbout4')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.columnAbout5')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.columnAbout6')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.columnAbout7')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.columnAbout8')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.columnAbout9')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.columnAbout10')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.columnAbout11')
+		showTheSection(e,classTag,deltaY)
+		classTag = document.querySelector('.columnAbout12')
+		showTheSection(e,classTag,deltaY)
 
 		})
 	})
@@ -238,6 +264,7 @@ main {
 		&.head {
 
 			width: 100%;
+			height: auto;
 			height: 35px;
 			display: block;
   			justify-content: center;
@@ -588,18 +615,11 @@ main {
 
 		@media screen and (max-width: 768px) {
 
-			padding-top: 0;
 			&.head {
 				
 				
 				h1 {
 					margin: 0 !important;
-<<<<<<< HEAD
-<<<<<<< HEAD
-				}
-=======
-=======
->>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
 					margin-top: 30px !important;
 					margin-left: 10px !important;
 					line-height: 29px;
@@ -611,7 +631,6 @@ main {
 						transform: translateX(-50px);
 						opacity: 0;
 					}
->>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
 
 					&.show {
 						transform: translateX(0);
@@ -621,12 +640,6 @@ main {
 
 				hr {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-					margin-left: 24.5px !important;
-=======
-=======
->>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
 					margin-left: 10px !important;
 
 					&.about {
@@ -642,11 +655,12 @@ main {
 						transform: translateY(0px);
 						opacity: 1;
 					}
->>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
 				}
 			}
 			&.body {
 				display: block;
+				font-size: 7px;
+				width: 80vw;
 
 				div {
 					&.columnAbout1 {
@@ -654,20 +668,24 @@ main {
 						margin-left: 0;
 						padding: -25px;
 
-				}
-				.columnAbout2 {
-					width: 100% !important;
-					margin-left: 0;
-					padding-left: 0 !important;
-					padding-top: 26px;
+						p {
 
-					p{
-						padding-bottom: 73px;
+							svg {
+								width: 12px;
+							}
+						}
+
+						&.hide {
+							transform: translateX(-50px);
+							opacity: 0;
+						}
+
+						&.show {
+							transform: translateX(0px);
+							opacity: 1;
+						}
+
 					}
-<<<<<<< HEAD
-				}
-			}
-=======
 					&.columnAbout2 {
 						width: 70% !important;
 						margin-left: 0;
@@ -686,7 +704,6 @@ main {
 								font-size: 7.5px !important;
 							}
 						}
->>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
 
 						&.hide {
 							transform: translateX(100px);
@@ -702,36 +719,62 @@ main {
 			}
 
 			&.body1 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-				width: 95%;
->>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
-=======
-				width: 95%;
->>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
+				width: 80vw;
 				
 				.wrap1 {
 					padding-top: 151px;
-					flex-direction: column;
+					flex-direction: column-reverse;
 					align-items: center;
 					padding-left: 0;
 					padding: 20px;
-					transform: rotate(180deg);
 
 					.columnAbout3 {
-						transform: rotate(180deg);
-						padding-top: 20px;
+						padding-top: 10px;
+
+						.child-head {
+							font-size: 10px;
+						}
+
+						.child-list {
+							font-size: 8px;
+							
+							.list {
+								align-items: center;
+								height: 0.5vh;
+								margin-top: 7px !important;
+								padding: 15px 11px !important;
+
+								&.list1 {
+									margin-top: 33px !important;
+								}
+
+								span {
+									padding-right: 11px !important;
+								}
+
+								p {
+									padding-right: 10px !important;
+								}
+
+								i {
+									font-size: 12px !important;
+									margin-right: 11px !important;
+								}
+							}
+						}
 					}
 					
 					.columnAbout4 {
+						margin: 0;
 						
 						svg {
-							transform: rotate(180deg);
 							position: relative;
+							display: block;
+							margin-left: auto;
+							margin-right: auto;
 							margin-top: 20px;
-							max-width: 480px !important;
-							height: 267px !important;
+							width: 45vw !important;
+							height: 247px !important;
 						}
 
 						&.show {
@@ -751,9 +794,6 @@ main {
 					justify-content: center;
 					align-content: center;
 					align-items: center;
-<<<<<<< HEAD
-					padding-top: 20px;
-=======
 					.onWrap {
 						display: flex;
 						.columnWrap2 {
@@ -836,11 +876,15 @@ main {
 						}
 					}
 					
->>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
 				}
 			}
 		}
 			
+	}
+}
+@media screen and (max-width: 768px) {
+	main {
+		width: 100%;
 	}
 }
 </style>
@@ -862,16 +906,25 @@ function showTheSection (e,mainTag,deltaY) {
 			
 
 		}
-		console.log(currTar);
 
 		if (e.pointerId != undefined) {
-			const recognizeIdButton = userWindow.getAttribute('id')
+			const recognizeIdButton = mainTag.getAttribute('id')
 			const recognizeIdPage = deltaY.getAttribute('id')
-			if (recognizeIdPage == recognizeIdButton) {
+			const checkClass = mainTag.getAttribute('class').match(/\soneClick/g)
+			if (recognizeIdPage == "About1") {
 				mainTag.classList.remove('show')
-				mainTag.classList.add('show')
+				
+				if (checkClass != null) {
+					setTimeout(() => {
+						mainTag.classList.add('show')
+					},2000)
+				} else {
+					mainTag.classList.add('show')
+					mainTag.classList.add('oneClick')
+				}
 			} else {
 				mainTag.classList.remove('show')
+				mainTag.classList.remove('oneClick')
 			}
 		}
 	}

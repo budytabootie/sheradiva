@@ -68,37 +68,11 @@ button {
 
 	main {
 		flex: 1 1 0;
-		padding: 0rem 0 0 1.5rem;
+		padding: 0rem 0 1rem 1.5rem;
 		display: block;
 	}
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 768px) {
-	.app {
-		display: flex;
-		overflow-x: hidden;
-
-		main {
-			flex: 1 1 0;
-			padding: 0 0 0 1.5rem;
-		}
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	.app {
-		display: flex;
-
-		main {
-			flex: 1 1 0;
-			padding: 2rem 2.3rem;
-		}
-	}
-}
-
-=======
->>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
 @media screen and (max-width: 768px) {
 	.app {
 		display: flex;
