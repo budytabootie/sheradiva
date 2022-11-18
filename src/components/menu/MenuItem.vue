@@ -17,7 +17,7 @@
 	</div>
 
 	<div v-show="showChildren || !is_expanded" class="items-container" :class="{ cExpanded: is_expanded }"
-		:style="{ height: containerHeight || !containerHeight && !is_expanded}" ref="container">
+		:style="{ height: containerHeight ||  !is_expanded}" ref="container">
 		<menu-item v-for="(item, index) in data" :key="index" :data="item.children" :label="item.label"
 			:icon="item.icon" :depth="depth + 1" :link="item.link" />
 	</div>
@@ -238,6 +238,17 @@
 			transition: 0.2s ease-out;
 		}
 	}
+
+	@media screen and (max-width: 768px) {
+	.button {
+		padding: 1rem 1rem;
+
+		.material-icons {
+			top: calc(50% - 4rem / 2) !important;
+			font-size: 1rem;
+		}
+	}
+	}
 }
 
 .is_expanded {
@@ -265,7 +276,7 @@
 			align-items: center;
 			text-decoration: none;
 			transition: 0.1s ease-out;
-			padding: 0.3rem 0.5rem 0.3rem 1.3rem;
+			padding: 1rem 1rem;
 			margin: 1rem 0rem;
 
 			.collapsible {
@@ -296,7 +307,6 @@
 			}
 
 			.material-icons {
-				font-size: 2rem;
 				color: var(--grey);
 				transition: 0.2s ease-out;
 			}

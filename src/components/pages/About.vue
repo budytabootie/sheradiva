@@ -1,7 +1,7 @@
 <template>
-	<main :class="`${head}-page`" :id="link">
+	<main :class="`${link}-page`" :id="link">
 		<div class="head">
-			<h1 class="hide">TENTANG KAMI</h1>
+			<h1 class="hide">{{ head }}</h1>
 			<hr class="about hide">
 		</div>
 		<div class="body">
@@ -216,7 +216,7 @@ onMounted(() =>{
 		})
 
 	}, false);
-
+	
 })
 </script>
 
@@ -224,17 +224,23 @@ onMounted(() =>{
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap');
 
 main {
-
+	background: linear-gradient(
+		to bottom,
+		white 0%,
+		white 27%,
+		#F3F5FA 27%,
+		#F3F5FA 100%
+	);
+	
 	div {
+		padding-top: 37px;
 		font-family: 'Inter', sans-serif;
 		&.head {
 
 			width: 100%;
-			height: auto;
 			height: 35px;
 			display: block;
   			justify-content: center;
-
 			h1 {
 				color: #37517E;
 				width: 185px;
@@ -371,7 +377,6 @@ main {
 			width: 100%;
 			height: 100%;
 			margin-top: 37px;
-			background-color: #F3F5FA;
 			position: relative;
 
 			.wrap1 {
@@ -583,10 +588,27 @@ main {
 
 		@media screen and (max-width: 768px) {
 
+			padding-top: 0;
 			&.head {
+				
+				
 				h1 {
 					margin: 0 !important;
+<<<<<<< HEAD
 				}
+=======
+					margin-top: 30px !important;
+					margin-left: 10px !important;
+					line-height: 29px;
+					margin-bottom: 0 !important;
+					font-size: 12px;
+					text-align: left;
+
+					&.hide {
+						transform: translateX(-50px);
+						opacity: 0;
+					}
+>>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
 
 					&.show {
 						transform: translateX(0);
@@ -596,7 +618,25 @@ main {
 
 				hr {
 
+<<<<<<< HEAD
 					margin-left: 24.5px !important;
+=======
+					margin-left: 10px !important;
+
+					&.about {
+						width: 68px;
+					}
+
+					&.hide {
+						transform: translateY(50px);
+						opacity: 0;
+					}
+
+					&.show {
+						transform: translateY(0px);
+						opacity: 1;
+					}
+>>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
 				}
 			}
 			&.body {
@@ -618,8 +658,29 @@ main {
 					p{
 						padding-bottom: 73px;
 					}
+<<<<<<< HEAD
 				}
 			}
+=======
+					&.columnAbout2 {
+						width: 70% !important;
+						margin-left: 0;
+						padding-left: 0 !important;
+						padding-top: 26px;
+
+						p {
+							padding-bottom: 30px;
+						}
+
+						.btn-0 {
+							width: 115px;
+							padding: 5px 13px !important;
+
+							a {
+								font-size: 7.5px !important;
+							}
+						}
+>>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
 
 						&.hide {
 							transform: translateX(100px);
@@ -635,6 +696,10 @@ main {
 			}
 
 			&.body1 {
+<<<<<<< HEAD
+=======
+				width: 95%;
+>>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
 				
 				.wrap1 {
 					padding-top: 151px;
@@ -676,7 +741,92 @@ main {
 					justify-content: center;
 					align-content: center;
 					align-items: center;
+<<<<<<< HEAD
 					padding-top: 20px;
+=======
+					.onWrap {
+						display: flex;
+						.columnWrap2 {
+							width: 30vw;
+							background-color: white;
+							margin-top: 8px;
+							margin-bottom: 8px;
+							border-radius: 4px;
+							transition: all 2s ease-out;
+												
+								svg {
+									display: block;
+									margin-left: auto;
+									margin-right: auto;
+									margin-top: 10px;
+									margin-bottom: 9px;
+									width: 26px;
+									height: 28px;
+								}
+
+								h4 {
+									margin: 0 0 0px 20px;
+									text-align: center;
+									font-weight: 500;
+									font-size: 10px;
+									margin: 0;
+								}
+								
+								p {
+									padding: 0 20px 26px 20px;
+									bottom: 0;
+									text-align: center;
+									font-weight: 400;
+									font-size: 7px;
+									margin-top: 7px;
+								}
+
+							&.columnAbout9 {
+								margin-right: 20px;
+								&.hide {
+									transform: translateX(-50px);
+									opacity: 0;
+								}
+								&.show {
+									transform: translateX(0px);
+									opacity: 1;
+								}
+							}
+							&.columnAbout10 {
+								&.hide {
+									transform: translateX(50px);
+									opacity: 0;
+								}
+								&.show {
+									transform: translateX(0px);
+									opacity: 1;
+								}
+							}
+							&.columnAbout11 {
+								margin-right: 20px;
+								&.hide {
+									transform: translateX(-50px);
+									opacity: 0;
+								}
+								&.show {
+									transform: translateX(0px);
+									opacity: 1;
+								}
+							}
+							&.columnAbout12 {
+								&.hide {
+									transform: translateX(50px);
+									opacity: 0;
+								}
+								&.show {
+									transform: translateX(0px);
+									opacity: 1;
+								}
+							}
+						}
+					}
+					
+>>>>>>> 7e8419b4d52cf2940218180615d71a9e8d914d20
 				}
 			}
 		}

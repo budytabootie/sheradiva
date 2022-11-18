@@ -92,6 +92,20 @@ aside {
 				}
 			}
 		}
+
+		@media screen and (max-width: 768px) {
+			justify-content: center;
+
+			.menu-toggle {
+
+				.material-icons {
+					font-size: 1rem;
+					color: var(--grey);
+					transition: 0.4s;
+				}
+			}
+
+			}
 	}
 
 	h3 {
@@ -163,6 +177,21 @@ aside {
 			.menu-toggle {
 				transform: rotate(-180deg);
 			}
+
+			@media screen and (max-width: 768px) {
+			justify-content: flex-end;
+
+			.menu-toggle {
+
+				.material-icons {
+					font-size: 1rem;
+					color: var(--grey);
+					transition: 0.4s;
+				}
+			}
+
+			}
+
 		}
 
 		h3,
