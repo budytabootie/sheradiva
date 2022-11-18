@@ -242,7 +242,7 @@ onMounted(() =>{
 		})
 
 	}, false);
-
+	
 })
 </script>
 
@@ -250,13 +250,20 @@ onMounted(() =>{
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap');
 
 main {
-
+	background: linear-gradient(
+		to bottom,
+		white 0%,
+		white 27%,
+		#F3F5FA 27%,
+		#F3F5FA 100%
+	);
+	
 	div {
+		padding-top: 37px;
 		font-family: 'Inter', sans-serif;
 		&.head {
 
 			width: 100%;
-			height: auto;
 			height: 35px;
 			display: block;
   			justify-content: center;
@@ -396,7 +403,6 @@ main {
 			width: 100%;
 			height: 100%;
 			margin-top: 37px;
-			background-color: #F3F5FA;
 			position: relative;
 
 			.wrap1 {
@@ -608,6 +614,7 @@ main {
 
 		@media screen and (max-width: 768px) {
 
+			padding-top: 0;
 			&.head {
 				
 				

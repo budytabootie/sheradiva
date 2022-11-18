@@ -229,7 +229,7 @@
 		align-items: center;
 		text-decoration: none;
 
-		padding: 1rem 1rem;
+		padding: 1rem 0.7rem;
 		transition: 0.2s ease-out;
 
 		.material-icons {

@@ -40,11 +40,11 @@ const props = defineProps({
 
 main {
 	font-family: 'Inter', sans-serif;
+	background-color: #37517E;
 
 	.container {
 		width: 100%;
 		height: 514px;
-		background-color: #37517E;
 		display: flex;
 		align-items: center;
 

@@ -41,13 +41,18 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar
 {
 	width: 12px;
-	background-color: transparent;
+	background-color: #37517E;
 }
 
 body::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
-	background-color: transparent;
+	background: linear-gradient(
+		to bottom,
+		#37517E 0%,
+		#a6b8d8 50%,
+		#37517E 100%,
+	);
 }
 
 button {
@@ -63,7 +68,7 @@ button {
 
 	main {
 		flex: 1 1 0;
-		padding: 0rem 0 1rem 1.5rem;
+		padding: 0rem 0 0 1.5rem;
 		display: block;
 	}
 }
