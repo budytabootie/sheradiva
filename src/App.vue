@@ -64,7 +64,30 @@ button {
 
 	main {
 		flex: 1 1 0;
-		padding: 2rem 3rem;
+		padding: 1rem 0 1rem 1.5rem;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.app {
+		display: flex;
+
+		main {
+			flex: 1 1 0;
+			padding: 2rem 2.3rem;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.app {
+		display: flex;
+
+		main {
+			flex: 1 1 0;
+			padding: 2rem 1.6rem;
+		}
 	}
 }
 
