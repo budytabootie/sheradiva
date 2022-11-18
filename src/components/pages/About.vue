@@ -264,6 +264,7 @@ main {
 		&.head {
 
 			width: 100%;
+			height: auto;
 			height: 35px;
 			display: block;
   			justify-content: center;
@@ -614,7 +615,6 @@ main {
 
 		@media screen and (max-width: 768px) {
 
-			padding-top: 0;
 			&.head {
 				
 				
@@ -719,7 +719,7 @@ main {
 			}
 
 			&.body1 {
-				width: 95%;
+				width: 80vw;
 				
 				.wrap1 {
 					padding-top: 151px;
